@@ -84,16 +84,6 @@
 
     </style>
     <script>
-      function handleFirstTimeViewer() {
-        if (!localStorage.getItem('visited')) {
-          localStorage.setItem('visited', 'true');
-          alert("Please don't go on this site if Blocksi is on!");
-        }
-      }
-
-      window.onload = handleFirstTimeViewer;
-    </script>
-    <script>
      function openList(url) {
         var win = window.open('');
         win.document.write('<iframe src="' + url +'" frameborder="0"></iframe>');
